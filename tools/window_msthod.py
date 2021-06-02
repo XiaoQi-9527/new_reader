@@ -22,14 +22,14 @@ class WindowMethod:
 
     def set_icon(self, icon=None):
         """设置窗口图标"""
-        icon = 'window/image/bqg.ico' if icon is None else icon
+        icon = './icons/bqg.ico' if icon is None else icon
         self.window.iconbitmap(icon)
 
     def set_top(self, top=False):
         """窗口置顶"""
         self.window.wm_attributes('-topmost', top)
 
-    def set_change(self):
+    def set_no_stretching(self):
         """禁止拉伸窗口"""
         self.window.resizable(width=False, height=False)
 

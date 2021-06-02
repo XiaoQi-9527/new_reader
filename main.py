@@ -16,7 +16,7 @@ def main():
     # 设置窗口置顶
     win.set_top(top=True)
     # 禁止拉伸窗口
-    win.set_change()
+    win.set_no_stretching()
     # 获取默认背景色
     bg = "#%x%x%x" % root.winfo_rgb(root.cget('background'))
 
